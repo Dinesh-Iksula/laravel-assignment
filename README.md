@@ -1,3 +1,66 @@
+# Laravel Assignment
+
+## 🚀 Project Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Dinesh-Iksula/laravel-assignment.git
+cd laravel-assignment
+```
+
+---
+
+### 2. Configure Environment
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Update the `.env` file with your database and application configuration.
+
+---
+
+### 3. Install Dependencies
+
+```bash
+composer install
+```
+
+---
+
+### 4. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+---
+
+### 5. Run the Application
+
+```bash
+php artisan serve
+```
+
+The application will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📌 Requirements
+
+- PHP 8.2 or above
+- Composer
+- MySQL or any supported database
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
