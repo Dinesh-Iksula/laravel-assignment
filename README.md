@@ -39,7 +39,15 @@ php artisan key:generate
 
 ---
 
-### 5. Run the Application
+### 5. Run Migrations and Seeders
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+### 6. Run the Application
 
 ```bash
 php artisan serve
