@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('assigned_tasks', function (Blueprint $table) {
-            $table->unsignedInteger('id')->primary();
+            $table->increments('id');
             $table->integer('assignor_id');
-            $table->integer('assignee_id');
+            $table->integer('assignee_id')->index();
             $table->integer('house_id');
             $table->unsignedInteger('mls_id')->nullable();
             $table->integer('category')->nullable();
@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('video_caption')->nullable();
             $table->string('sale_price')->nullable();
             $table->string('task_explain_doc')->nullable();
-            $table->string('status')->nullable();
+            $table->string('status')->nullable()->index();
             $table->tinyInteger('cancelled_flag')->default(0);
             $table->tinyInteger('is_task_mandatory')->nullable();
             $table->tinyInteger('is_acknowledged_mandatory')->nullable();
